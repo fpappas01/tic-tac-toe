@@ -28,7 +28,7 @@
               "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
-            "scripts": ["node_modules/tictactoe/dist/tictactoe.min.js"]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -96,5 +96,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
