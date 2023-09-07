@@ -35,7 +35,6 @@ command to run if program contains helper info
 
 ## Authors
 
-Fotios Pappas
 [@Fotios Pappas](https://www.linkedin.com/in/fotios-pappas/)
 
 
