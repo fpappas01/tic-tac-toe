@@ -1,0 +1,25 @@
+mat-grid-tile {
+  background: lightblue;
+}
+
+#game {
+  position: relative;
+  top: 10%;
+  left: 30%;
+  width: 30%;
+  height: 30%;
+}
+
+/* #results {
+  position: relative;
+  top: 10%;
+  left: 30%;
+}
+*/
+
+button {
+  position: relative;
+  left: 45%;
+  background-color: lightblue;
+  font-size: large;
+}
