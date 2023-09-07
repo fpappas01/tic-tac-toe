@@ -1,78 +1,62 @@
-Tic Tac Toe Game with Minimax AI
-This is a simple implementation of the classic Tic Tac Toe game with a challenging Minimax AI opponent. The frontend is built using Angular, and the server-side logic implements the Minimax algorithm to provide a competitive AI opponent.
+# Project Title
 
-Features
-Play Tic Tac Toe against a smart AI opponent.
-A responsive and user-friendly UI built with Angular.
-The AI opponent uses the Minimax algorithm to make strategic moves.
-Enjoy a two-player mode for some fun with friends.
-A clean and intuitive interface.
-Prerequisites
-Node.js and npm installed on your machine.
+Simple overview of use/purpose.
 
-Angular CLI installed globally. You can install it using the following command:
+## Description
 
-shell
-Copy code
-npm install -g @angular/cli
-Getting Started
-Clone this repository to your local machine:
+An in-depth paragraph about your project and overview of use.
 
-shell
-Copy code
-git clone https://github.com/your-username/tic-tac-toe-minimax.git
-Change to the project directory:
+## Getting Started
 
-shell
-Copy code
-cd tic-tac-toe-minimax
-Install the frontend dependencies:
+### Dependencies
 
-shell
-Copy code
-cd frontend
-npm install
-Start the frontend application:
+* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
+* ex. Windows 10
 
-shell
-Copy code
-ng serve
-The application should be available at http://localhost:4200/ in your browser.
+### Installing
 
-Running the Minimax AI Server
-Change to the server directory:
+* How/where to download your program
+* Any modifications needed to be made to files/folders
 
-shell
-Copy code
-cd ../server
-Install the server dependencies:
+### Executing program
 
-shell
-Copy code
-npm install
-Start the server:
+* How to run the program
+* Step-by-step bullets
+```
+code blocks for commands
+```
 
-shell
-Copy code
-npm start
-The server should be running at http://localhost:3000/.
+## Help
 
-How to Play
-Open the application in your web browser at http://localhost:4200/.
+Any advise for common problems or issues.
+```
+command to run if program contains helper info
+```
 
-You can start a new game by clicking the "New Game" button.
+## Authors
 
-Play against the Minimax AI opponent or invite a friend to play with you.
+Contributors names and contact info
 
-To make a move, simply click on an empty cell on the game board.
+ex. Dominique Pizzie  
+ex. [@DomPizzie](https://twitter.com/dompizzie)
 
-AI Minimax Algorithm
-The Minimax algorithm is used to power the AI opponent. It ensures that the AI makes optimal moves to either win or tie the game. The AI explores all possible moves and selects the best one based on the minimax score.
+## Version History
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+* 0.2
+    * Various bug fixes and optimizations
+    * See [commit change]() or See [release history]()
+* 0.1
+    * Initial Release
 
-Acknowledgments
-Special thanks to the developers of Angular for providing an excellent framework for building the frontend.
-Thanks to the creators of the Minimax algorithm for making the AI opponent challenging and fun to play against.
-Enjoy the game!
+## License
+
+This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+
+## Acknowledgments
+
+Inspiration, code snippets, etc.
+* [awesome-readme](https://github.com/matiassingers/awesome-readme)
+* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
+* [dbader](https://github.com/dbader/readme-template)
+* [zenorocha](https://gist.github.com/zenorocha/4526327)
+* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
