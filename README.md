@@ -36,9 +36,8 @@ command to run if program contains helper info
 ## Authors
 
 Fotios Pappas
+[@Fotios Pappas](https://www.linkedin.com/in/fotios-pappas/)
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
 
 ## Version History
 
