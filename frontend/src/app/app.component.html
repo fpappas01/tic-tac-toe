@@ -1,8 +1,9 @@
 <div id="game">
   <!-- How I can do this with NGFOR? -->
-  <p><strong>Your are O, Play first</strong></p>
+  <p *ngIf="turn===0"><strong>Your turn</strong></p>
+  <p *ngIf="turn===1"><strong>Computer's turn</strong></p>
   <mat-grid-list cols="3" rowHeight="2:1">
-    <mat-grid-tile disabled="true" (click)="onClickTile(1)">{{numsSymbols[1]}}</mat-grid-tile>
+    <mat-grid-tile (click)="onClickTile(1)">{{numsSymbols[1]}}</mat-grid-tile>
     <mat-grid-tile (click)="onClickTile(2)">{{numsSymbols[2]}}</mat-grid-tile>
     <mat-grid-tile (click)="onClickTile(3)">{{numsSymbols[3]}}</mat-grid-tile>
     <mat-grid-tile (click)="onClickTile(4)">{{numsSymbols[4]}}</mat-grid-tile>
@@ -13,7 +14,7 @@
     <mat-grid-tile (click)="onClickTile(9)">{{numsSymbols[9]}}</mat-grid-tile>
   </mat-grid-list>
   <div id="results">
-    <p><strong>Winner: {{winner}}</strong></p>
+    <p *ngIf="gameEnded"><strong>Winner: {{winner}}</strong></p>
     <button (click)="onButtonClick()">Reset</button>
   </div>
 </div>

@@ -10,14 +10,8 @@ mat-grid-tile {
   height: 30%;
 }
 
-/* #results {
-  position: relative;
-  top: 10%;
-  left: 30%;
-}
-*/
-
 button {
+  margin-top: 10px;
   position: relative;
   left: 45%;
   background-color: lightblue;

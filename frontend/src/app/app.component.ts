@@ -13,20 +13,15 @@ export class AppComponent {
   numsSymbols: string[] = ['', '', '', '', '', '', '', '', '', ''];
   resetArr: string[] = ['', '', '', '', '', '', '', '', '', ''];
   winner: string = '';
+  private symbolCounter: number = 9;
+  gameEnded: boolean = false;
   minmaxService: MinmaxService = inject(MinmaxService);
-
 
   onClickTile(num: number) {
     if (!this.numsSymbols[num] && !this.winner) {
       this.turn = 1 - this.turn;
       this.numsSymbols[num] = this.symbols[this.turn];
-
-      this.minmaxService.getMove(this.numsSymbols.slice(1)).subscribe((res) => {
-        console.log(res);
-
-        // this.numsSymbols[res] = 'X';
-      });
-
+      this.symbolCounter--;
       this.winner += this.minmaxService.gameHasEnded(
         0,
         this.numsSymbols,
@@ -37,8 +32,18 @@ export class AppComponent {
         this.numsSymbols,
         this.symbols
       );
+      if (this.symbolCounter == 0) {
+        this.winner = 'draw';
+      }
       if (this.winner) {
-        window.alert('Winner');
+        this.gameEnded = true;
+      }
+      if (this.turn === 1) {
+        this.minmaxService
+          .getMove(this.numsSymbols.slice(1))
+          .subscribe((res) => {
+            this.onClickTile(res + 1);
+          });
       }
     }
   }
@@ -47,5 +52,7 @@ export class AppComponent {
     this.numsSymbols = this.resetArr.slice();
     this.winner = '';
     this.turn = 0;
+    this.symbolCounter = 9;
+    this.gameEnded = !this.gameEnded;
   }
 }
