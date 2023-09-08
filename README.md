@@ -1,42 +1,18 @@
 # Tic Tac Toe with Minimax
 
-Simple overview of use/purpose.
-
-## Description
-
-An in-depth paragraph about your project and overview of use.
+The tic tac toe game in the web against the computer.
 
 ## Getting Started
 
+Clone the repository locally.
+
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
-
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
-
-### Executing program
-
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
-
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+Run npm ci to install the necessary modules.
 
 ## Authors
 
 [@Fotios Pappas](https://www.linkedin.com/in/fotios-pappas/)
-
 
 ## Version History
 
