@@ -8,7 +8,7 @@ Clone the repository locally.
 
 ### Dependencies
 
-Run npm ci to install the necessary modules.
+Run `npm ci` to install the necessary modules.
 
 ## Authors
 
